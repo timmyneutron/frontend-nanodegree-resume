@@ -1,3 +1,5 @@
+// bio object
+
 var bio = {
 	name: "Tim Abrahamsen",
 	role: "Front-End Web Developer",
@@ -54,6 +56,8 @@ var bio = {
 		};
 	},
 };
+
+// work object
 
 var work = {
 	jobs: [{
@@ -117,6 +121,8 @@ var work = {
 	}
 };
 
+// projects object
+
 var projects = {
 	projects: [{
 		title: "Appify",
@@ -159,6 +165,8 @@ var projects = {
 		};
 	}
 };
+
+// education object
 
 var education = {
 	schools: [{
@@ -235,18 +243,18 @@ var education = {
 	}
 }
 
-var footerContacts = {
-	display: function() {
-		var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-		var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-		var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
-		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+// function to display contact info in footer
 
-		$("#footerContacts").append(formattedMobile);
-		$("#footerContacts").append(formattedEmail);
-		$("#footerContacts").append(formattedGitHub);
-		$("#footerContacts").append(formattedLocation);
-	}
+function displayfootercontacts() {
+	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+	var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
+	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+
+	$("#footerContacts").append(formattedMobile);
+	$("#footerContacts").append(formattedEmail);
+	$("#footerContacts").append(formattedGitHub);
+	$("#footerContacts").append(formattedLocation);
 }
 
 bio.display();
@@ -259,4 +267,4 @@ projects.display();
 
 $("#mapDiv").append(googleMap);
 
-footerContacts.display();
+displayfootercontacts();
