@@ -11,7 +11,7 @@ h5,
 h6 {
   padding:0;
   margin:0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Oxygen";
 }
 
 .clear-fix {
@@ -26,7 +26,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: DeepSkyBlue;
   line-height: 48px;
   display: inline;
 }
@@ -42,7 +42,7 @@ h2 {
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000;
+  color: gray;
   line-height: 22px;
 }
 
@@ -61,6 +61,13 @@ h5 {
 
 }
 
+hr {
+    border: 0;
+    height: 5px;
+    background: #4a4a4a;
+    background-image: linear-gradient(to right, #4a4a4a, DeepSkyBlue, #4a4a4a);
+    /* Source: https://css-tricks.com/examples/hrs/ */
+}
 
 .date-text {
   font-style: italic;
@@ -86,7 +93,7 @@ p {
 }
 
 a {
-  color: #1199c3;
+  color: DeepSkyBlue;
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -100,16 +107,16 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: DeepSkyBlue;
   display: none;
 }
 
-.orange {
-  background-color: #f5ae23;
+.skyblue {
+  background-color: DeepSkyBlue;
 }
 
-.orange-text {
-  color: #f5ae23;
+.skyblue-text {
+  color: DeepSkyBlue;
 }
 
 .white-text {
@@ -154,10 +161,18 @@ ul {
   padding: 10px;
   width: 200px;
   display: none;
+  border-radius: 20px;
+}
+
+.projectpic {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #4a4a4a;
+  border-radius: 10px;
 }
 
 img {
-  padding: 10px;
+  margin: 10px;
 }
 
 span {
