@@ -1,14 +1,3 @@
-// Hello.
-//
-// This is JSHint, a tool that helps to detect errors and potential
-// problems in your JavaScript code.
-//
-// To start, simply enter some JavaScript anywhere on this page. Your
-// report will appear on the right side.
-//
-// Additionally, you can toggle specific options in the Configure
-// menu.
-
 // bio object
 
 var bio = {
@@ -129,21 +118,24 @@ var projects = {
 	projects: [{
 		title: "Appify",
 		date: "Jan 2016 - Apr 2016",
-		description: "An app to appify other apps.",
+		description: "An app to appify other apps, so you can appify " +
+					 "for your apps while you app your other apps.",
 		url: "https://github.com/timmyneutron",
-		images: ["images/jet.jpg", "images/jet.jpg"]
+		images: ["images/jet.jpg"]
 	}, {
 		title: "Sunflower",
 		date: "Jan 2016 - Apr 2016",
-		description: "Makes pretty flowers. And launches rockets.",
+		description: "Makes pretty flowers, tells terrible jokes, and " + 
+					 "launches rockets.",
 		url: "https://github.com/timmyneutron",
-		images: ["images/rocket.jpg", "images/rocket.jpg"]
+		images: ["images/rocket.jpg"]
 	}, {
 		title: "Bokeh",
 		date: "Jan 2016 - Apr 2016",
-		description: "Makes SkyNet self aware. DO NOT RUN.",
+		description: "Makes SkyNet self aware. DO NOT RUN. I honestly don't " +
+					 "know why I made this.",
 		url: "https://github.com/timmyneutron",
-		images: ["images/module.jpg", "images/module.jpg"]
+		images: ["images/module.jpg"]
 	}],
 	display: function() {
 		$("#projects").append(HTMLprojectStart);
@@ -173,7 +165,7 @@ var education = {
 		name: "Massachusetts Institute of Technology",
 		location: "Cambridge, MA",
 		degree: "B.S.",
-		majors: ["Aerospace Engineering", "Theater"],
+		majors: ["Aerospace Engineering"],
 		date: "2002-2006",
 		url: "http://web.mit.edu/"
 	}],
